@@ -1,0 +1,60 @@
+Text: Hello
+
+--- HEX Conversion ---
+
+Step 1: Write each character and its ASCII decimal value
+H = 72
+e = 101
+l = 108
+l = 108
+o = 111
+
+Step 2: Convert each ASCII decimal to hexadecimal
+H = 72  = 48
+e = 101 = 65
+l = 108 = 6C
+l = 108 = 6C
+o = 111 = 6F
+
+Step 3: Combine all hex values
+48 65 6C 6C 6F
+
+Final Hex = 48656C6C6F
+
+--- Base64 Conversion ---
+
+Step 1: Convert each character to 8-bit binary
+H = 72  = 01001000
+e = 101 = 01100101
+l = 108 = 01101100
+l = 108 = 01101100
+o = 111 = 01101111
+
+Step 2: Combine all binary into one string
+0100100001100101011011000110110001101111
+
+Step 3: Split the binary into 6-bit groups
+010010 000110 010101 101100 011011 000110 111100
+
+Step 4: Convert each 6-bit group to decimal
+010010 = 18
+000110 = 6
+010101 = 21
+101100 = 44
+011011 = 27
+000110 = 6
+111100 = 60
+
+Step 5: Map each decimal to Base64 characters (A=0, B=1, ..., +=62, /=63)
+18 = S
+6  = G
+21 = V
+44 = s
+27 = b
+6  = G
+60 = 8
+
+Step 6: Add padding to make the length a multiple of 4
+SGVsbG8=
+
+Final Base64 = SGVsbG8=
