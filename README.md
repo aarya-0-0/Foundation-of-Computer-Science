@@ -45,3 +45,10 @@ Usage:
 Run sql_script.py to create tables and define relationships.
 Run Inserting_Data.sql to add initial data.
 Run join_operation.sql to fetch combined data using JOIN queries.
+
+Requirements
+Python 3.x for running the seating arrangement scripts.
+MySQL or any SQL database to execute SQL scripts.
+
+Author
+Aarya Shrestha
